@@ -1,0 +1,32 @@
+{
+  "name": "wanderlust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch src/scss:public/css",
+    "build:sass": "sass src/scss:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayzone91/Wanderlust.git"
+  },
+  "keywords": [],
+  "author": "Johannes Kirchner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayzone91/Wanderlust/issues"
+  },
+  "homepage": "https://github.com/jayzone91/Wanderlust#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.43.4"
+  }
+}
