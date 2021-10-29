@@ -1,0 +1,11 @@
+@import "vars";
+
+.dark {
+    background: $bg-dark;
+    color: $text-dark;
+}
+
+.light {
+    background: $bg-light;
+    color: $text-light;
+}
