@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget('./src/scss/');
 
     // Passthrough Copies
+    eleventyConfig.addPassthroughCopy('./src/js');
 
     // Shortcodes
     eleventyConfig.addShortcode("year", () => {

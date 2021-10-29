@@ -9,7 +9,7 @@
     {% include "includes/fa.njk" %}
     {% include "includes/css.njk" %}
 </head>
-<body>
+<body id="body" class="light">
     {% include "parts/menu.njk" %}
 
     {{ content | safe }}
@@ -17,6 +17,6 @@
 
 
     {% include "parts/footer.njk" %}
-
+    {% include "includes/js.njk" %}
 </body>
 </html>
